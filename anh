@@ -1,0 +1,17 @@
+<!--
+    protected void btLogin_Click(object sender, EventArgs e)
+    {
+        string passmahoa = mahoa(txtP.Text);
+        SqlConnection con = new SqlConnection("server= .;database = bcdonlinesv;Integrated security = true;");
+        SqlDataAdapter da = new SqlDataAdapter("select * from taikhoan where username='" + txtU.Text + "' and pass='" + passmahoa + "'", con);
+        DataTable tb = new DataTable();
+        da.Fill(tb);
+        if (tb.Rows.Count > 0)
+        {
+            Session["name"] = txtU.Text;
+            Session["allow"] = true;
+            Response.Redirect("admin.aspx");
+        }
+        else Response.Write("<script>alert('Username/Password chưa đúng')</script>");
+    }
+-->
